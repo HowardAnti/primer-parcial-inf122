@@ -1,0 +1,219 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --darkblack: #0C151D;
+    --gray: #A3ABB2;
+    --smokedwhite:#F1F2F4;
+    --eggyellow:#FFE071; 
+    --lightblack:#3D3D3D;
+    --bluee:#171F26;
+    --md: 46px;
+    --sm: 22px;
+}
+
+body{
+    font-family: Poppins;
+    background-color: var(--darkblack);
+    margin: 0;
+}
+
+.main{
+    width: 100%;
+    background-color: var(--darkblack);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.title{
+    color: var(--white);
+    font-size:  var(--md);
+}
+
+.subtitle{
+    color: var(--gray);
+    font-size:  var(--sm);
+}
+
+.subsubtitle{
+    color: var(--gray);
+    font-size:  var(--sm);
+    text-align: center;
+}
+
+.perfile{
+    display: flex;
+    margin: 178px 0px 0px 0px;
+}
+
+.icon{
+    width: 215px;
+    height: 215px;
+    background-color: var(--eggyellow);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 28px;
+}
+
+
+
+.icon img {
+    width: 192px;
+    height: 192px;
+    border-radius: 50%;
+    border: white solid 6px;
+    margin: 23px 23px 23px 23px;
+}
+
+.social{
+    display: flex;
+}
+
+.social img{
+    width: 36px;
+    height: 36px;
+    margin: 0px 26px 0px 0px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px 20px 0px;
+}
+
+.info-icons{
+    background-color: var(--darkblack);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 148px;
+    height: 102px;
+    margin: 20px 30px 20px 30px;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons2{
+    display: flex;
+    background-color: var(--bluee);
+    width: 756px;
+    height: 116px;
+    border-radius: 20px;
+    margin: 47px 0px 47px 0px;
+    
+}
+
+.first-button {
+    background-color: var(--eggyellow);
+    color: var(--lightblack);
+    border: none;
+    border-radius: 10px;
+    width: 290px;
+    height: 80px;
+    font-size: var(--sm);
+    cursor: pointer;
+    margin: 47px 38px 0px 38px;
+}
+
+.second-button {
+    background-color: var(--bluee);
+    color: var(--gray);
+    border: none;
+    border-radius: 10px;
+    width: 290px;
+    height: 80px;
+    font-size: var(--sm);
+    cursor: pointer;
+    margin: 47px 38px 0px 38px;
+}
+
+.third-button {
+    background-color: var(--darkblack);
+    color: var(--gray);
+    border: none;
+    border-radius: 10px;
+    width: 350px;
+    height: 80px;
+    font-size: var(--sm);
+    cursor: pointer;
+    margin: 18px 38px 0px 38px;
+}
+
+.forth-button {
+    background-color: var(--bluee);
+    color: var(--gray);
+    border: none;
+    border-radius: 10px;
+    width: 350px;
+    height: 80px;
+    font-size: var(--sm);
+    cursor: pointer;
+    margin: 18px 38px 0px 38px;
+}
+
+
+.matrix{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 0px 178px 0px;
+}
+
+.matrix img{
+    width: 362px;
+    height: 226px;
+    border-radius: 15px;
+    margin: 32px 32px 32px 32px;
+}
+
+@media(max-width: 768px) {
+
+    .perfile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon img {
+        border: var(--darkblack) solid 6px;
+    }
+    .social img{
+        margin: 0px 13px 0px 13px;
+    }
+
+    .buttons2{
+        width: 650px; 
+    }
+
+    .third-button {
+        width: 290px;
+        height: 80px;
+    }
+
+    .forth-button{
+        width: 290px;
+        height: 80px;
+    }
+
+    .matrix{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .matrix img{
+        width: 650px;
+        height: 350px;
+        border-radius: 15px;
+        margin: 32px 32px 32px 32px;
+    }
+
+}
